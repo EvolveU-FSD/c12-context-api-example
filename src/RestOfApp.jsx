@@ -1,17 +1,19 @@
-import { useContext } from 'react';
-import { TestContext } from './TestProvider';
+import ShowTheTestValues from './ShowTheTestValues';
 
 const RestOfApp = () => {
-  const testValues = useContext(TestContext);
-
   return (
-    <div>
-      <h2>RestOfApp</h2>
-      <ul>
-        <li>Test1: {testValues.test1}</li>
-        <li>Test2: {testValues.test2}</li>
-      </ul>
-    </div>
+    <>
+      <h2 style={{ color: 'green' }}>
+        RestOfApp - not using TestContext at all
+      </h2>
+      <div
+        style={{ border: '2px solid green', padding: '10px', color: 'green' }}
+      >
+
+        <ShowTheTestValues />
+
+      </div>
+    </>
   );
 };
 

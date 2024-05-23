@@ -8,7 +8,19 @@ const TestProvider = (props) => {
   const theValues = { test1: 111, test2: 'hello friends!' };
 
   return (
-    <TestContext.Provider value={theValues}>{children}</TestContext.Provider>
+    <>
+      <h2 style={{ color: 'red' }}>
+        TestProvider - populates the TestContext and makes values available to
+        descendents
+      </h2>
+      <div style={{ border: '2px solid red', padding: '10px', color: 'red' }}>
+
+        <TestContext.Provider value={theValues}>
+          {children}
+        </TestContext.Provider>
+
+      </div>
+    </>
   );
 };
 
