@@ -25,4 +25,10 @@ In this app, our component tree is:
 2. Run `npm install`
 3. Run `npm run dev`
 4. Open your browser and navigate to the URL shown in the terminal
+5. View the page
+6. Change the test1 or test2 values in the `TestProvider` component to see the changes reflected in the UI
 
+
+## Challenge
+
+Modify the code in `ShowTheTestValues` so that if you add additional test values to the `TestProvider`, the `ShowTheTestValues` component will automatically display them without any additional changes to the `ShowTheTestValues` component.
